@@ -93,12 +93,19 @@ namespace cs
             //}
             //test.printstuArray();
 
-            //c#读取C++数组测试
-            Byte* pointer = (Byte*)test.upArray.ToPointer();
-            for (int i = 0; i < test.upArrayLen; i++)
-            {
-                Console.WriteLine(pointer[i]);
-            }
+            ////c#读取C++数组测试
+            //Byte* pointer = (Byte*)test.upArray.ToPointer();
+            //for (int i = 0; i < test.upArrayLen; i++)
+            //{
+            //    Console.WriteLine(pointer[i]);
+            //}
+
+
+            ////返回结构体引用测试
+            //ParamClr param = test.returnStruct();
+
+            //Console.WriteLine(param.cData);
+            //Console.WriteLine(param.iData);
 
             Console.Read();
         }

@@ -197,3 +197,12 @@ void testnamespace::MyPrintClr::changestuArray()
 	this->stuAray->num = this->pMyPrint->stuArray.num;
 	this->stuAray->TSin(this->pMyPrint->stuArray);
 }
+
+testnamespace::ParamClr^ testnamespace::MyPrintClr::returnStruct()
+{
+	ParamClr^ param = gcnew ParamClr();
+	param->cData = 78;
+	param->iData = 99;
+
+	return param;
+}

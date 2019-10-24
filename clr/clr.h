@@ -85,6 +85,8 @@ namespace testnamespace
 		property IntPtr upArray {IntPtr get() { return (IntPtr)(this->pMyPrint->upArray); }};
 		property int upArrayLen{int get(){return this->pMyPrint->upArrayLen;}}
 
+		ParamClr^ returnStruct();
+
 	private:
 		MyPrint* pMyPrint;
 		void byteArrayTSin(array<Byte>^ dest, UINT8* source, int num);
